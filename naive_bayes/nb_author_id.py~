@@ -24,15 +24,15 @@ features_train, features_test, labels_train, labels_test = preprocess()
 from sklearn.naive_bayes import GaussianNB
 gnb = GaussianNB()
 t0 = time()
-
+< your clf.fit() line of code >
 print "training time:", round(time()-t0, 3), "s"
 gnb.fit(features_train,labels_train)
 t0 = time()
-
+< your clf.fit() line of code >
 print "training time:", round(time()-t0, 3), "s"
 y=gnb.predict(features_test)
 t0 = time()
-
+< your clf.fit() line of code >
 print "training time:", round(time()-t0, 3), "s"
 from sklearn.metrics import accuracy_score
 z=accuracy_score(labels_test,y)
